@@ -77,7 +77,7 @@ function json2list(json){
       lowbox.appendChild(stop);
      
       var tweet = d.createElement('a');
-      tweet.innerHTML = '<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><a href="http://twitter.com/share?url=soundsgood.moo.jp/&text=\'' + json['artistName'] + '\'の\'' + json['itemName'] + '\'を試聴しました！\'' + json['previewUrl'] + '\'&hashtags=SoundsGood"><img src="img/tweet.png" width="50px" height="25px"></a>';
+      tweet.innerHTML = '<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><a href="http://twitter.com/share?url=hoge.hoge.jp/&text=\'' + json['artistName'] + '\'の\'' + json['itemName'] + '\'を試聴しました！\'' + json['previewUrl'] + '\'&hashtags=SampleSound"><img src="img/tweet.png" width="50px" height="25px"></a>';
       lowbox.appendChild(tweet);
 
       result_container.appendChild(container_left);
