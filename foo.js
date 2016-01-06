@@ -42,23 +42,23 @@ function json2list(json){
 
       container_left.appendChild(img);
 
-      var soso = d.createElement('div');
-      soso.innerHTML = json['artistName'];
-      soso.id = "soso";
-      soso.style.marginLeft = "2px";
-      container_right.appendChild(soso);
+      var artist = d.createElement('div');
+      artist.innerHTML = json['artistName'];
+      artist.id = "artist";
+      artist.style.marginLeft = "2px";
+      container_right.appendChild(artist);
       
-      var you = d.createElement('div');
-      you.innerHTML = json['itemName'];
-      you.id = "you";
-      you.style.wordWrap = "break-word";
-      you.style.marginLeft = "2px";
-      container_right.appendChild(you);
+      var song = d.createElement('div');
+      song.innerHTML = json['itemName'];
+      song.id = "song";
+      song.style.wordWrap = "break-word";
+      song.style.marginLeft = "2px";
+      container_right.appendChild(song);
     
-      var ryubi = d.createElement('audio');
-      ryubi.id = json['previewUrl'];
-      ryubi.src = json['previewUrl'];
-      container_right.appendChild(ryubi);
+      var data = d.createElement('audio');
+      data.id = json['previewUrl'];
+      data.src = json['previewUrl'];
+      container_right.appendChild(data);
 
       var lowbox = d.createElement('div');
       lowbox.style.width = "168px";
